@@ -1,27 +1,28 @@
 package sorting;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map.Entry;
+import java.util.Set;
+
+
 public class Test {
 
-	public static void main(String[] args) {
-		Integer[] a=new Integer[] {1,2,3,4,5};
-		
-		Integer[] b=new Integer[5];
-		
-		for(int i=0;i<a.length;i++)
-			b[i]=a[i];
-		
-		for(int i=0;i<a.length;i++)
-			a[i]=10;
-		
-		
-		for(int i:a)
-			System.out.println(i);
-		
-		System.out.println("b value");
-		
-		for(int i:b)
-			System.out.println(i);
-		
+		public static void main(String[] args) {
+			
+			String[] substrings=new String[] {"a","bc","ac","ad"};
+			
+			Arrays.sort(substrings);
+			System.out.println(Arrays.toString(substrings));
+			System.out.println(String.join("",substrings));
+		}
+
 	}
 	
-}
